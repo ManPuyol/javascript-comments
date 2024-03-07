@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const commentsList = document.getElementById('commentsList');
 
     form.addEventListener('submit', (event) => {
-        //TODO----
+        event.preventDefault();
         const author = authorInput.value.trim();
         const content = contentInput.value.trim();
 
